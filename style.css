@@ -31,7 +31,7 @@ body {
 }
 
 .birthday-photo {
-    width: 300px;
+    width: 400px; /* Zvýšeno z 300px na 400px */
     height: auto;
     border-radius: 15px;
     border: 5px solid #000;
@@ -74,4 +74,3 @@ body {
     50% { color: #1976d2; }
     100% { color: #d32f2f; }
 }
-
