@@ -31,11 +31,11 @@ body {
 }
 
 .birthday-photo {
-    width: 250px;
+    width: 300px;
     height: auto;
     border-radius: 15px;
     border: 5px solid #000;
-    animation: pulse 2s infinite;
+    animation: photo-glow 3s infinite alternate, photo-slide 5s infinite;
     margin-bottom: 10px;
 }
 
@@ -58,9 +58,15 @@ body {
     to { opacity: 1; transform: scale(1); }
 }
 
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+@keyframes photo-glow {
+    0% { box-shadow: 0 0 10px #ff4081; }
+    100% { box-shadow: 0 0 30px #7c4dff; }
+}
+
+@keyframes photo-slide {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
 
 @keyframes color-blink {
