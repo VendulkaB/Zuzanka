@@ -31,9 +31,9 @@ body {
 }
 
 .birthday-photo {
-    width: 150px;
+    width: 250px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 15px;
     border: 5px solid #000;
     animation: pulse 2s infinite;
     margin-bottom: 10px;
