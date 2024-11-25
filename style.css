@@ -13,64 +13,72 @@ body {
 
 .invitation-container {
     text-align: center;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    background: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.95);
     border: 10px solid #000;
     border-radius: 15px;
     box-shadow: 10px 10px 0 #000;
-    animation: fade-in 2s ease-in-out;
+    overflow: hidden;
 }
 
-.header {
-    background: linear-gradient(45deg, #ff4081, #03a9f4);
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 15px;
+.photo-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 .birthday-photo {
-    width: 400px; /* Zvýšeno z 300px na 400px */
+    width: 100%;
     height: auto;
-    border-radius: 15px;
-    border: 5px solid #000;
-    animation: photo-glow 3s infinite alternate, photo-slide 5s infinite;
-    margin-bottom: 10px;
+    animation: zoom-in 10s infinite alternate ease-in-out;
+    border-bottom: 5px solid #000;
 }
 
-.details, .confirmation, .footer {
-    margin-top: 20px;
+.text-container {
+    padding: 20px;
+}
+
+.birthday-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff4081;
+    text-shadow: 3px 3px 0 #000, -2px -2px 0 #7c4dff;
+    animation: glow-text 3s infinite alternate;
+}
+
+.details {
     font-size: 1.2rem;
+    margin: 10px 0;
     color: #000;
+}
+
+.highlight {
+    color: #d32f2f;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 #ffc400;
 }
 
 .phone-number {
     font-size: 1.5rem;
-    color: #d32f2f;
+    color: #1976d2;
     font-weight: bold;
-    animation: color-blink 1s infinite;
+    animation: blink 1.5s infinite;
 }
 
 /* Animations */
-@keyframes fade-in {
-    from { opacity: 0; transform: scale(0.8); }
-    to { opacity: 1; transform: scale(1); }
+@keyframes zoom-in {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
 }
 
-@keyframes photo-glow {
-    0% { box-shadow: 0 0 10px #ff4081; }
-    100% { box-shadow: 0 0 30px #7c4dff; }
+@keyframes glow-text {
+    0% { text-shadow: 3px 3px 0 #000, -2px -2px 0 #ff4081; }
+    100% { text-shadow: 5px 5px 10px #7c4dff, -3px -3px 10px #03a9f4; }
 }
 
-@keyframes photo-slide {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
-@keyframes color-blink {
+@keyframes blink {
     0% { color: #d32f2f; }
-    50% { color: #1976d2; }
+    50% { color: #ff4081; }
     100% { color: #d32f2f; }
 }
