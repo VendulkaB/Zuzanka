@@ -43,7 +43,7 @@ body {
 /* Textová část */
 .text-container {
     padding: 20px;
-    color: #000; /* Černý text pro lepší kontrast */
+    color: #000;
 }
 
 .birthday-title {
@@ -88,6 +88,7 @@ body {
 .button-container {
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
 }
@@ -132,4 +133,41 @@ body {
     0% { color: #76c7c0; }
     50% { color: #ff4081; }
     100% { color: #76c7c0; }
+}
+
+/* === Mobilní optimalizace === */
+@media (max-width: 768px) {
+    .invitation-container {
+        width: 95%;
+    }
+
+    .photo-container {
+        height: 300px; /* Zmenšení fotografie na menších zařízeních */
+    }
+
+    .birthday-title {
+        font-size: 2rem; /* Menší text nadpisu na mobilu */
+    }
+
+    .details {
+        font-size: 1.2rem; /* Menší text detailů */
+    }
+
+    .phone-number {
+        font-size: 1.5rem; /* Menší text telefonního čísla */
+    }
+
+    .button-container {
+        flex-direction: column; /* Tlačítka budou pod sebou */
+        gap: 10px;
+    }
+
+    .confirm-button, .share-button {
+        font-size: 1rem; /* Menší tlačítka na mobilu */
+        padding: 8px 15px;
+    }
+
+    .countdown-timer {
+        font-size: 1.5rem; /* Menší text odpočtu */
+    }
 }
