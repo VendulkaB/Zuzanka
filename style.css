@@ -2,8 +2,8 @@ body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #ffeb3b, #e91e63, #03a9f4);
-    color: #000;
+    background: linear-gradient(45deg, #ff4081, #7c4dff, #03a9f4);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,46 +16,40 @@ body {
     padding: 20px;
     width: 80%;
     max-width: 600px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     border: 10px solid #000;
+    border-radius: 15px;
     box-shadow: 10px 10px 0 #000;
     animation: fade-in 2s ease-in-out;
 }
 
 .header {
-    background: linear-gradient(45deg, #ff4081, #7c4dff);
-    color: #fff;
+    background: linear-gradient(45deg, #ff4081, #03a9f4);
     padding: 10px;
     border-radius: 10px;
-    animation: bounce-in 2s infinite;
+    margin-bottom: 15px;
 }
 
-.theme span {
-    color: #ffc400;
-    font-weight: bold;
+.birthday-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #000;
+    animation: pulse 2s infinite;
+    margin-bottom: 10px;
 }
 
-.details p {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-.confirmation {
-    background: #e3f2fd;
-    padding: 10px;
+.details, .confirmation, .footer {
     margin-top: 20px;
-    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #000;
 }
 
 .phone-number {
     font-size: 1.5rem;
     color: #d32f2f;
+    font-weight: bold;
     animation: color-blink 1s infinite;
-}
-
-.footer {
-    margin-top: 20px;
-    font-style: italic;
 }
 
 /* Animations */
@@ -64,7 +58,7 @@ body {
     to { opacity: 1; transform: scale(1); }
 }
 
-@keyframes bounce-in {
+@keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.1); }
 }
@@ -74,3 +68,4 @@ body {
     50% { color: #1976d2; }
     100% { color: #d32f2f; }
 }
+
