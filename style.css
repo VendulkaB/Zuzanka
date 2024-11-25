@@ -15,7 +15,7 @@ body {
 /* Hlavní kontejner */
 .invitation-container {
     text-align: center;
-    width: 80%;
+    width: 90%;
     max-width: 900px;
     background: rgba(255, 255, 255, 0.95);
     border: 10px solid #000;
@@ -36,11 +36,16 @@ body {
     height: 100%;
     object-fit: cover;
     animation: zoom-in-out 8s infinite alternate ease-in-out;
+    border-bottom: 5px solid #000;
 }
 
 /* Textová část */
 .text-container {
     padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Tmavší průhledné pozadí */
+    border-radius: 15px;
+    margin: 10px;
+    color: #fff; /* Kontrastní barva textu */
 }
 
 .birthday-title {
@@ -54,7 +59,6 @@ body {
 .details {
     font-size: 1.5rem;
     margin: 20px 0;
-    color: #000;
 }
 
 .highlight {
@@ -63,9 +67,16 @@ body {
     text-shadow: 2px 2px 0 #ffc400;
 }
 
+.confirmation {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+}
+
 .phone-number {
     font-size: 1.8rem;
-    color: #1976d2;
+    color: #76c7c0;
     font-weight: bold;
     animation: blink 1.5s infinite;
 }
@@ -82,7 +93,7 @@ body {
 }
 
 @keyframes blink {
-    0% { color: #d32f2f; }
+    0% { color: #76c7c0; }
     50% { color: #ff4081; }
-    100% { color: #d32f2f; }
+    100% { color: #76c7c0; }
 }
