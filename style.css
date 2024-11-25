@@ -1,6 +1,6 @@
 /* Celkové nastavení stránky */
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Luckiest Guy', sans-serif; /* Pop art font */
     margin: 0;
     padding: 0;
     background: linear-gradient(45deg, #ff4081, #7c4dff, #03a9f4);
@@ -28,14 +28,16 @@ body {
 /* Fotografie */
 .photo-container {
     width: 100%;
-    max-height: 400px; /* Maximální výška obrázku */
+    max-height: 400px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .birthday-photo {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
     border-bottom: 5px solid #000;
     animation: photo-highlight 8s infinite alternate ease-in-out;
 }
@@ -43,19 +45,19 @@ body {
 /* Textová část */
 .text-container {
     padding: 20px;
-    color: #000; /* Černý text pro lepší kontrast */
+    color: #000;
 }
 
 .birthday-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #ff4081;
-    text-shadow: 3px 3px 0 #000, -3px -3px 0 #7c4dff;
+    text-shadow: 4px 4px 0 #000, -4px -4px 0 #7c4dff;
     animation: glow-text 3s infinite alternate;
 }
 
 .details {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 20px 0;
 }
 
@@ -66,22 +68,15 @@ body {
 }
 
 .confirmation {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 20px;
 }
 
 .phone-number {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #76c7c0;
     font-weight: bold;
     animation: blink 1.5s infinite;
-}
-
-/* QR kód */
-.qr-code img {
-    margin-top: 10px;
-    width: 120px;
-    height: 120px;
 }
 
 /* Tlačítka */
@@ -90,21 +85,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .confirm-button, .share-button {
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #fff;
     background: linear-gradient(45deg, #ff4081, #7c4dff);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    width: 45%; /* Tlačítka budou mít rovnoměrnou šířku na mobilu */
     text-align: center;
+    min-width: 40%;
 }
 
 .confirm-button:hover, .share-button:hover {
@@ -114,7 +109,7 @@ body {
 
 /* Odpočet času */
 .countdown-timer {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #ff4081;
     margin-top: 20px;
@@ -144,15 +139,15 @@ body {
     }
 
     .birthday-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .details {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .phone-number {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .button-container {
