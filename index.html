@@ -8,11 +8,15 @@
 </head>
 <body>
     <div class="invitation-container">
+        <!-- Dekorace (konfety) -->
+        <div class="decorations"></div>
+
         <!-- Dominantní fotografie -->
         <div class="photo-container">
             <img src="Image19.jpg" alt="Oslavenec" class="birthday-photo">
         </div>
-        <!-- Text s efekty -->
+
+        <!-- Textová část -->
         <div class="text-container">
             <h1 class="birthday-title">🎉 Přijďte na oslavu narozenin! 🎉</h1>
             <p class="details">
@@ -26,7 +30,28 @@
                 Potvrďte prosím svou účast nejpozději do 10. prosince na telefonním čísle: <br>
                 <span class="phone-number">+420 725 804 063</span>
             </p>
+
+            <!-- QR kód -->
+            <div class="qr-code">
+                <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://www.google.com/maps/place/Na+Pískách+501,+Srch" alt="QR kód">
+            </div>
         </div>
+
+        <!-- Tlačítka -->
+        <div class="button-container">
+            <a href="tel:+420725804063" class="confirm-button">📞 Zavolat a potvrdit</a>
+            <a href="https://www.google.com/maps/place/Na+Pískách+501,+Srch" class="share-button" target="_blank">📤 Otevřít v Mapách</a>
+        </div>
+
+        <!-- Odpočet času -->
+        <div id="countdown" class="countdown-timer"></div>
     </div>
+
+    <!-- Hudba -->
+    <audio autoplay loop>
+        <source src="birthday-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
 </body>
 </html>
